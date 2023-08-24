@@ -1,9 +1,9 @@
 #!/bin/bash
 up_id=$1
 name=$2
-if [ $name == 'standby_promote' ] ; then
+if [[ $name == 'standby_promote' ]] ; then
         declare -A servers
-        if [ $up_id == 1 ] ; then
+        if [[ $up_id == 1 ]] ; then
                 down_id=2
         else
                 down_id=1
